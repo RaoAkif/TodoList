@@ -1,17 +1,19 @@
-export const items = [
+const items = [
   {
     index: 1,
-    description: "Bring a Book",
+    description: 'Bring a Book',
     completed: true,
   },
   {
     index: 2,
-    description: "Buy a Bag",
+    description: 'Buy a Bag',
     completed: true,
   },
   {
     index: 3,
-    description: "Cook Food",
+    description: 'Cook Food',
     completed: true,
   },
 ];
+
+export default items;
