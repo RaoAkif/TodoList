@@ -1,7 +1,7 @@
-import "./main.css";
-import { items } from "./modules/data";
+import './main.css';
+import { items } from './modules/data';
 
-const listItem = document.querySelector("#task-list");
+const listItem = document.querySelector('#task-list');
 
 window.onload = () => {
   items.forEach((item) => {
