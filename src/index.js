@@ -1,4 +1,4 @@
-import './main.css';
+import './index.css';
 import items from './modules/data.js';
 
 const listItem = document.querySelector('#task-list');
