@@ -12,7 +12,6 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: white;
-  /* box-shadow: 1px 1px 5px 5px lightgray; */
   width: 30%;
   padding: 10px;
 }
@@ -59,9 +58,9 @@ h3 {
 }
 
 #add-item {
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-left-width: 0px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
   border-bottom-color: lightgray;
   padding: 5px;
 }

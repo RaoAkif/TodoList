@@ -1,5 +1,5 @@
 import './main.css';
-import { items } from './modules/data';
+import { items } from './modules/data.js';
 
 const listItem = document.querySelector('#task-list');
 
