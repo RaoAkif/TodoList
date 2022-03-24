@@ -4,9 +4,9 @@ import items from './modules/data.js';
 const listItem = document.querySelector('#task-list');
 
 window.onload = () => {
-  items.forEach((item) => {
+  items.forEach((item, index) => {
     listItem.innerHTML += `
-      <li class='item' id='item-${item.index}'>
+      <li class='item' id='item-${index + 1}'>
         <div id='item-check'>
             <input type='checkbox' id='item-check' name='item' value='item'>
             <div class='item-spec'>
