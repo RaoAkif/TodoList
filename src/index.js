@@ -10,7 +10,7 @@ import DeleteTodo from './modules/DeleteTodo.js';
 const heading = document.querySelector('#item-title');
 const newItem = document.querySelector('.new-item');
 const newListItem = document.querySelector('.new-list-item');
-export const toDoList = document.querySelector('.list');
+const toDoList = document.querySelector('.list');
 const refresh = new Image();
 refresh.src = renew;
 const enter = new Image();

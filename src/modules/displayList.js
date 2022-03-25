@@ -24,3 +24,5 @@ export function createList(element, list) {
     element.appendChild(newElement);
   }
 }
+
+export default createList;
