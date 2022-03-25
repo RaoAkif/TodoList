@@ -1,25 +1,33 @@
 import './index.css';
-import items from './modules/data.js';
+import renew from './assets/images/renew.svg';
+import enterKey from './assets/images/return.svg';
+import TodoList from './modules/todoList.js';
+import AddTodo from './modules/addTodo.js';
+import { createList } from './modules/displayList.js';
+import EditTodo from './modules/editTodo.js';
+import DeleteTodo from './modules/DeleteTodo.js';
 
-const listItem = document.querySelector('#task-list');
+const heading = document.querySelector('#item-title');
+const newItem = document.querySelector('.new-item');
+const newListItem = document.querySelector('.new-list-item');
+const toDoList = document.querySelector('.list');
+const refresh = new Image();
+refresh.src = renew;
+const enter = new Image();
+enter.src = enterKey;
+const toDo = new TodoList();
+toDo.checkStorage();
+heading.appendChild(refresh);
+newItem.appendChild(enter);
 
-window.onload = () => {
-  items.forEach((item, index) => {
-    listItem.innerHTML += `
-      <li class='item' id='item-${index + 1}'>
-        <div id='item-check'>
-            <input type='checkbox' id='item-check' name='item' value='item'>
-            <div class='item-spec'>
-                <div class='item-desc'>
-                ${item.description}
-                </div>
-            </div>
-        </div>
-        <div class='item-completed'>
-          <i class='fa-solid fa-ellipsis-vertical'></i>
-          <i class='fa-solid fa-trash-can'></i>
-        </div>
-      </li>
-    `;
-  });
-};
+refresh.addEventListener('click', () => {
+  window.location.reload();
+});
+
+createList(toDoList, toDo);
+
+AddTodo(newListItem, toDo);
+
+DeleteTodo(toDo);
+
+EditTodo(toDo);
