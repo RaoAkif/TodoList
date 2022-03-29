@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack --config webpack.config.js",
-    "deploy": "./dist"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
