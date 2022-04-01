@@ -1,20 +1,18 @@
 import { moreDots } from '../Utils/CONSTANTS.js'
 
-function display(index, toDo) {
+function display(index, todos) {
   return `
     <input class='checkbox' type='checkbox' name='checkbox'>
-    <label class="task" for='checkbox'>${toDo.list[index].description}</label>
+    <label class="task" for='checkbox'>${todos.list[index].description}</label>
     <img class='dots' src=${moreDots.src}>
   `;
 }
 
-export function createList(element, list) {
-  element.innerHTML = '';
-  list.sort();
-  for (let i = 0; i < list.list.length; i += 1) {
+export function createList(element, todos) {
+  for (let i = 0; i < todos.list.length; i += 1) {
     const newElement = document.createElement('li');
     newElement.className = 'list-item';
-    newElement.innerHTML = display(i, list);
+    newElement.innerHTML = display(i, todos);
     element.appendChild(newElement);
   }
 }

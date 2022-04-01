@@ -16,6 +16,5 @@ export default function DeleteTodo(toDo) {
     toDo.list = toDo.list.filter((el) => !el.completed);
     toDo.fixIndex();
     toDo.store();
-    window.location.reload();
   });
 }

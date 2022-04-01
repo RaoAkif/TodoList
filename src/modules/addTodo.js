@@ -1,11 +1,11 @@
 import Todo from './Todo.js';
 
-export default function AddTodo(newListItem, toDo) {
+export default function AddTodo(newListItem, todos) {
   newListItem.addEventListener('keypress', (e) => {
     if (e.keyCode === 13 && newListItem.value) {
-      const toDoItem = new Todo(newListItem.value, false, toDo.list.length);
-      toDo.add(toDoItem);
-      toDo.store();
+      const todoItem = new Todo(newListItem.value, false, todos.list.length);
+      todos.add(todoItem);
+      todos.store();
     }
   });
 }

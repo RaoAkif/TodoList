@@ -31,7 +31,6 @@ export default function EditTodo(toDo) {
           toDo.remove(i);
           toDo.fixIndex();
           toDo.store();
-          window.location.reload();
         });
         document.addEventListener('click', () => {
           window.location.reload();

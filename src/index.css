@@ -59,6 +59,7 @@ h1 {
 }
 
 .list-item {
+  display: flex;
   padding: 10px 48px 10px 16px;
   border: 1px solid gray;
   position: relative;
