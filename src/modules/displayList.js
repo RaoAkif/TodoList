@@ -1,10 +1,4 @@
-import enterKey from '../assets/images/return.svg';
-import more from '../assets/images/more.svg';
-
-const enter = new Image();
-enter.src = enterKey;
-const moreDots = new Image();
-moreDots.src = more;
+import { moreDots } from '../Utils/CONSTANTS.js'
 
 function display(index, toDo) {
   return `

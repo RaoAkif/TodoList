@@ -1,8 +1,6 @@
 import { createList } from './displayList.js';
-import remove from '../assets/images/delete.svg';
+import { trash } from '../Utils/CONSTANTS.js';
 
-const trash = new Image();
-trash.src = remove;
 export default function EditTodo(toDo) {
   const editButtons = document.querySelectorAll('.dots');
   for (let i = 0; i < editButtons.length; i += 1) {
@@ -11,7 +9,7 @@ export default function EditTodo(toDo) {
       editButtons[i].parentElement.innerHTML = `
         <input class='checkbox' type='checkbox'>
         <input class='edit task' type='text' value='${toDo.list[i].description}'>
-        <img class='dots' src=${remove}>
+        <img class='dots' src=${trash.src}>
       `;
 
       const input = document.querySelectorAll('.task');
