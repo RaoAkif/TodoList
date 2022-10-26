@@ -1,37 +1,29 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Todo List
-
 > A very simple todo app with CRUD operations.
 
-
 ## Built With
-
 - HTML, CSS, JS, Node, Webpack
 
 ## Live Version
 - [Live Link](https://raoakif-todojs.netlify.app/)
 
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
-- Have LTS version of npm and node.js on your local environment.
+Node JS
 
 ### Setup
-- Download or clone the repository.
+`git clone git@github.com:RaoAkif/TodoList.git`
 
 ### Install
-- Run npm install in the folder where your have the files.
+- `cd TodoList`
+- `npm i`
 
 ### Usage
-- Run npm start on your local path to start the web server.
+`npm start`
 
-### Tests
-- Run npm install
-- Run npm test
-
-
+### Run tests
+`npm test`
 
 ## Authors
 
