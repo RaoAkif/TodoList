@@ -13,27 +13,23 @@
 - [Live Link](https://raoakif-todojs.netlify.app/)
 
 
-## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-**In this repository We created Awesome Books SPA in ES6 notation.**
+### Prerequisites
+- Have LTS version of npm and node.js on your local environment.
 
-## Run it
+### Setup
+- Download or clone the repository.
 
-Use the following steps to run this Project locally:
+### Install
+- Run npm install in the folder where your have the files.
 
-- Create a directory
+### Usage
+- Run npm start on your local path to start the web server.
 
-- Open the terminal
-
-- Run this command:
-`git clone https://github.com/RaoAkif/TodoList.git`
-
-- Enter in to the folder:
-`cd TodoList`
-
-- Open the folder with a code editor (VS Code preferred)
-
-- Go to the index.html file and open it with live server
+### Tests
+- Run npm install
+- Run npm test
 
 
 
