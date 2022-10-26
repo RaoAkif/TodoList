@@ -2,7 +2,7 @@
 
 # Todo List
 
-> CRUD Operation for To Dos
+> A very simple todo app with CRUD operations.
 
 
 ## Built With
